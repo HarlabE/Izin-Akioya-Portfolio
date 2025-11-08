@@ -1,13 +1,13 @@
-import React from 'react'
-
-const header = () => {
+const Header = () => {
   return (
-    <div>
-        <header className='header' id="home" data-scroll-index="0" classnam  ="header" data-stellar-background-ratio="0.5">
-
-
-
-{/* <div className="caption v-middle text-center">
+    <div
+      className="header"
+      id="home"
+      data-scroll-index="0"
+      classnam="header"
+      data-stellar-background-ratio="0.5"
+    >
+      {/* <div className="caption v-middle text-center">
   <h3 className="cd-headline clip" 
   
   style={{fontFamily:  'Helvetica'}}>
@@ -18,20 +18,17 @@ const header = () => {
     </span>
   </h3>
 </div>	 */}
-			</header>
     </div>
-  )
-}
+  );
+};
 
-export default header
-
+export default Header;
 
 // const Header = () => {
 //   return (
 //     <div>
 //         <header className='header' id="home" data-scroll-index="0" data-stellar-background-ratio="0.5">
 
-        
 //         <div className="wrapper">
 //           <div className='content'>
 //           <ul>
@@ -45,7 +42,3 @@ export default header
 //     </div>
 //   )
 // }
-
-
-
-
