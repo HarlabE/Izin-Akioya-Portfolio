@@ -9,12 +9,9 @@ const Commercial = () => {
 				<div className="section-head text-center" >
 							<h5 className="tit" style={{marginBottom: "0"}}>Commercial Leader</h5>
 						</div>
-				<div className="" style={{ textAlign: 'center', color: '#222222', padding: '3.125rem 8rem'}}>
-					<p className="mb-40 career-text" style={{color: '#222222', fontSize: '18px'}}>
-						Izin is a highly sought after commercial leader with rounded marketing experience and
-						<br />
-						multi-sectoral expertise, immense grit, <br/>
-						My work has contributed to tax policy reform and digital skills development in Nigeria
+				<div className="" style={{ textAlign: 'center', color: '#222222', }}>
+					<p className=" mb-40 career-text" style={{color: '#222222', }}>
+						With rounded marketing experience and multi-sectoral expertise, my work has contributed to tax policy reform and digital skills development in Nigeria
 					</p>
 				</div>
 			</div>

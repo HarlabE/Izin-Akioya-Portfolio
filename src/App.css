@@ -517,6 +517,10 @@ textarea:focus
 	/* padding-bottom: 15px; */
 	
 }
+.career-text{
+	padding-inline: 20rem;
+	font-size: 18px;
+}
 
 .portfolio .filtering span{
 	padding: 0 1.56rem 0.31rem 1.25rem;
@@ -1512,10 +1516,16 @@ footer p{
 			padding: 10px;
 			z-index: 2;
 		}
-		
+		.tit{
+			font-size: 22px;
+			padding-bottom: 10px;
+		}
 		
 		.fancy-text{
 			font-size: 18px;
+		}
+		.career-text{
+			font-size: 14px;
 		}
 		
 		
@@ -1622,6 +1632,10 @@ footer p{
 		.text p {
 			color: black; 
 			padding-left: 0.5%; 
+		}
+		.career-text{
+			padding-inline: 5rem;
+			font-size: 18px;
 		}
 		
 		.text h5 {

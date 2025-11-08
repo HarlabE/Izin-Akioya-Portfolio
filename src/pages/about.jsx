@@ -13,23 +13,14 @@ const About = () => {
         </div> */}
         <div className="text" style={{marginLeft: "10px;"}} >
           
-          <div>
+          {/* <div>
             <h2  style={{fontSize: "24px", textAlign: "center", overflow:"hidden"}}><b className='abt'>ABOUT </b></h2>
-          </div>
+          </div> */}
           <div >
-            <p>
-              Izin Akioya is a multidisciplinary professional with expertise across business development, marketing and innovation. </p>
-              <p>
-                Her experience spans leading market development and client origination strategies, managing multi-million-dollar partnerships, and supporting new ventures from concept through commercialization. This blend enables her to shape markets, convert opportunities, and support new business lines from concept to scale, ensuring that strategy translates into real, measurable outcomes.
-              </p>
-              <p>
-              Her 10-year growth and marketing career includes roles at British American Tobacco, Leo Burnett, Eko Atlantic City, The Nigeria Economic Summit Group, and across fast-moving consumer goods, advertising, and policy sectors.
-              Her 5 year+ innovation and startup career includes founder and co-founder roles in e-commerce, supply chain and mergers and acquisitions software (M&A).  </p>
-              <p>
-              She voluntarily leads the Digital Skills Initiative at the Federal Ministry of Labour and Employment (Nigeria) and serves on the Nigeria Economic Summit Group's Trade, Investment, & Competitiveness Policy Commission.</p>
-              <p>
-              You will find her living urgently, - Creating - Intersecting - Doing.
-            </p>
+           <p>Izin Akioya is a multidisciplinary professional with expertise across business development, marketing and startup innovation.</p> 
+           <p>Her experience spans leading market development and client origination strategies, managing multi-million-dollar partnerships, and supporting new ventures from concept through commercialization. This blend enables her to shape markets, convert opportunities, and support new business lines from concept to scale, ensuring that strategy translates into real, measurable outcomes.</p>
+
+
          
         </div>
           <br/>
