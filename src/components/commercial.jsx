@@ -11,7 +11,7 @@ const Commercial = () => {
 						</div>
 				<div className="" style={{ textAlign: 'center', color: '#222222', }}>
 					<p className=" mb-40 career-text" style={{color: '#222222', }}>
-						With rounded marketing experience and multi-sectoral expertise, my work has contributed to tax policy reform and digital skills development in Nigeria
+						With rounded marketing experience and multi-sectoral expertise, <br /> my work has contributed to tax policy reform and digital skills development in Nigeria
 					</p>
 				</div>
 			</div>

@@ -514,13 +514,13 @@ textarea:focus
 }
 .entre-text2{
 	padding-top: 40px;
-	/* padding-bottom: 15px; */
 	
 }
 .career-text{
-	padding-inline: 20rem;
+	padding-top: 20px;
 	font-size: 18px;
 }
+
 
 .portfolio .filtering span{
 	padding: 0 1.56rem 0.31rem 1.25rem;
@@ -1518,7 +1518,7 @@ footer p{
 		}
 		.tit{
 			font-size: 22px;
-			padding-bottom: 10px;
+			/* padding-bottom: 50px; */
 		}
 		
 		.fancy-text{
