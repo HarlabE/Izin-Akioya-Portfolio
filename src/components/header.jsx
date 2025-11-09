@@ -1,23 +1,93 @@
+import { useEffect, useState } from "react";
+import blurDesktopImageUrl from "../img/blurDesktop.webp";
+import desktopImageUrl from "../img/CompressedBg.webp";
+import mobileImageUrl from "../img/CompressedMobileBg.jpg";
+import blurMobileImageUrl from "../img/MobileBlurBg.jpg";
+
 const Header = () => {
+  const mobileBreakpoint = 768;
+
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [backgroundImageUrl, setBackgroundImageUrl] = useState(desktopImageUrl);
+  const [blurBackgroundImage, setBlurBackgroundImage] =
+    useState(blurDesktopImageUrl);
+
+  useEffect(() => {
+    const updateBackgroundImage = () => {
+      if (window.innerWidth < mobileBreakpoint) {
+        setBackgroundImageUrl(mobileImageUrl);
+        setBlurBackgroundImage(blurMobileImageUrl);
+      } else {
+        setBackgroundImageUrl(desktopImageUrl);
+        setBlurBackgroundImage(blurDesktopImageUrl);
+      }
+    };
+
+    updateBackgroundImage();
+    window.addEventListener("resize", updateBackgroundImage);
+
+    return () => {
+      window.removeEventListener("resize", updateBackgroundImage);
+    };
+  }, []);
+
+  useEffect(() => {
+    setIsImageLoaded(false);
+    const img = new Image();
+    img.src = backgroundImageUrl;
+    img.onload = () => setIsImageLoaded(true);
+  }, [backgroundImageUrl]);
+
+  const blurStyle = {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    height: "100%",
+    width: "100%",
+    backgroundImage: `url(${blurBackgroundImage})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition:
+      window.innerWidth < mobileBreakpoint ? "center" : "initial",
+    filter: "blur(3px)", // additional blur
+    transition: "opacity 400ms ease-in-out",
+    opacity: isImageLoaded ? 0 : 1,
+    zIndex: 1,
+  };
+
+  const mainImageStyle = {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    height: "100%",
+    width: "100%",
+    backgroundImage: `url(${backgroundImageUrl})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition:
+      window.innerWidth < mobileBreakpoint ? "center" : "initial",
+    transition: "opacity 400ms ease-in-out",
+    opacity: isImageLoaded ? 1 : 0,
+    zIndex: 2,
+  };
+
+  const containerStyle = {
+    height: "100vh",
+    width: "100%",
+    position: "relative",
+    overflow: "hidden",
+  };
+
   return (
     <div
-      className="header"
+      style={containerStyle}
       id="home"
       data-scroll-index="0"
-      classnam="header"
       data-stellar-background-ratio="0.5"
     >
-      {/* <div className="caption v-middle text-center">
-  <h3 className="cd-headline clip" 
-  
-  style={{fontFamily:  'Helvetica'}}>
-    <span class="cd-words-wrapper">
-      <b class="is-visible">Storyteller</b>
-      <b>Multidisciplinary</b>
-      <b>Growth Leader</b>
-    </span>
-  </h3>
-</div>	 */}
+      <div style={blurStyle} />
+      <div style={mainImageStyle} />
+      {/* Content of your header */}
     </div>
   );
 };

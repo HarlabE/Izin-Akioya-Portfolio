@@ -54,6 +54,10 @@ body {
   padding: 10rem 0rem;
 }
 
+section {
+  margin: 10rem 0;
+}
+
 /* separator  */
 .wrapper {
   color: white;
@@ -102,12 +106,16 @@ body {
   .entrepreneurship_container {
     flex-direction: column;
   }
+
   .overall_container {
     padding: 0px 20px !important;
   }
 
   .wanderlust_container {
     padding: 5rem 0rem;
+  }
+  section {
+    margin: 5rem 0;
   }
 }
 @media (max-width: 500px) {
@@ -134,9 +142,7 @@ body {
     transform: translateY(-200%);
   }
 }
-section {
-  margin: 10rem 0;
-}
+
 #Entrepreneur {
   background-color: #000000;
   display: flex;
@@ -329,8 +335,6 @@ textarea:focus {
 .header {
   height: 100vh;
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  background-image: url(img/CompressedBg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
@@ -338,6 +342,23 @@ textarea:focus {
   overflow: hidden;
   transition: all 400ms ease-in-out;
 }
+
+/* .header {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: all 400ms ease-in-out;
+}
+
+.header.loaded {
+  background: rgba(0, 0, 0, 0.2);
+  background-image: url(img/CompressedBg.webp);
+  background-blend-mode: overlay;
+} */
 
 /* @media (max-width : 300px) {
 	.header {
