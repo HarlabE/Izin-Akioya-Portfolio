@@ -49,7 +49,7 @@ const Header = () => {
     backgroundSize: "cover",
     backgroundPosition:
       window.innerWidth < mobileBreakpoint ? "center" : "initial",
-    filter: "blur(3px)", // additional blur
+    filter: "blur(2px)", // additional blur
     transition: "opacity 400ms ease-in-out",
     opacity: isImageLoaded ? 0 : 1,
     zIndex: 1,
