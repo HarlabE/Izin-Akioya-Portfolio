@@ -11,7 +11,7 @@ function NavBar() {
   return (
     <Navbar className="navbar" variant="dark" sticky="top">
       <Container fluid className="navbar-container">
-        <Navbar.Brand className="brand" href="#">
+        <Navbar.Brand className="brand" href="/">
           IZIN AKIOYA
         </Navbar.Brand>
         <Navbar id="navbarScroll">
@@ -33,6 +33,7 @@ function NavBar() {
             <Nav.Link
               className="nav_item"
               href="https://www.linkedin.com/in/izinakioya/"
+              target="_blank"
               aria-label="LinkedIn"
             >
               <FontAwesomeIcon
@@ -43,6 +44,7 @@ function NavBar() {
             <Nav.Link
               className="nav_item"
               href="https://x.com/AkioyaIzin"
+              target="_blank"
               aria-label="LinkedIn"
             >
               <FontAwesomeIcon icon={faTwitter} style={{ fontSize: "15px" }} />
