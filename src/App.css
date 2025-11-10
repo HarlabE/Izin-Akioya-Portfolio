@@ -608,6 +608,21 @@ textarea:focus {
   font-size: 16px;
   position: relative;
   cursor: pointer;
+.entre-text2{
+	padding-top: 40px;
+	
+}
+.career-text{
+	padding-top: 20px;
+	font-size: 18px;
+}
+
+
+.portfolio .filtering span{
+	padding: 0 1.56rem 0.31rem 1.25rem;
+	font-size: 16px;
+	position: relative;
+	cursor: pointer;
 }
 
 .portfolio .filtering .active:after {
@@ -1353,6 +1368,7 @@ footer p {
   height: 100%;
 }
 
+<<<<<<< HEAD
 .image img {
   position: fixed;
   top: 0;
@@ -1361,6 +1377,79 @@ footer p {
   z-index: 10;
   width: 40%;
   height: auto;
+=======
+	.footer-icons i {
+        font-size: 24px; 
+        margin: 0 15px; 
+        color: #fffdfd; 
+        transition: color 0.3s ease; 
+        padding-bottom: 10px;
+      }
+
+      .social-icons i:hover {
+        color: #0077b5;
+      }
+      
+      li{
+        word-spacing: 0.2px;
+        padding: 5px;
+        text-decoration: underline;
+      }
+      .list2{
+        background-color: #f7f7f7;
+        padding-left: 5px;
+
+      }
+      .list-view{
+       display: flex;
+      }
+      .list-number{
+        padding: 2px;
+        font-weight: bold;
+        background-color: white;
+        border: 2px transparent solid ;
+        border-radius: 20px;
+        padding: 0 5px;
+        text-align: center;
+        justify-content: center;
+      }
+      .list-text{
+        border-bottom: 1px solid rgb(188, 187, 187);
+        /* padding-bottom: 10px; */
+      }
+
+	  @media (max-width: 458px) {
+
+		.header{
+			background-image: url(img/mobile\ bg.jpg);
+		}
+		.brand{
+			margin-left: 5px !important;
+			/* margin-top: 10px; */
+			font-size: 15px;
+			padding: 10px;
+			z-index: 2;
+		}
+		.tit{
+			font-size: 22px;
+			/* padding-bottom: 50px; */
+		}
+		
+		.fancy-text{
+			font-size: 18px;
+		}
+		.career-text{
+			font-size: 14px;
+		}
+		
+		
+	  }
+	  @media (max-width: 375px) {
+		 .brand, .nav_item{
+			margin-left: 0 !important;
+			font-size: 15px ;
+	
+>>>>>>> 0e920fab3d0fbede29adb4f9479de0d9ebe2cf31
 }
 
 .container h6 {
