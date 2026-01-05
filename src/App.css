@@ -1703,8 +1703,4 @@ li {
   }
 }
 
-@supports (-webkit-touch-callout: none) {
-  .header {
-    background-size: cover;
-  }
-}
+
